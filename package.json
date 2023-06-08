@@ -1,0 +1,24 @@
+{
+  "name": "ethereum-adapter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "prepare": "npx husky install",
+    "test": "npx truffle test",
+    "pretty": "npx --no-install pretty-quick --staged"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.9.1",
+    "npm": "^9.7.1",
+    "npm-check-updates": "^16.10.12",
+    "truffle": "^5.9.4"
+  },
+  "dependencies": {
+    "husky": "^8.0.3"
+  },
+  "resolutions": {}
+}
