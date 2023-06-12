@@ -29,6 +29,7 @@ contract ReentranceVulnerableVault {
         console.log("");
 
         // balances[msg.sender] = 0; // this line avoides reentrance.
+        // payable(msg.sender).transfer(balances[msg.sender]); // could work as a practical fix too because 2100 gas limit
         payable(msg.sender).sendValue(balances[msg.sender]);
         balances[msg.sender] = 0; // this line allowes the reentrance
     }
